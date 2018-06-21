@@ -13,8 +13,7 @@ Simply follow this procedure to re-flash failed BIOS update on a Dell Inspiron (
 <ul>
  	<li>First of all you have to download the correct firmware from Dell Official Website:
 <a href="http://downloads.dell.com/bios/N5010A15.EXE" target="_blank" rel="noopener nofollow">http://downloads.dell.com/bios/N5010A15.EXE</a>
-or
-[download id="3068"]</li>
+</li>
  	<li>Use Windows Command Prompt (run as administrator) to extract the required firmware files.</li>
  	<li>C:\&gt;cd /Downloads</li>
  	<li>C:\&gt;N5010A15.EXE /writehdrfile</li>
@@ -70,9 +69,13 @@ You’ll need <a href="https://www.7-zip.org/">7-Zip</a> or<a href="https://ww
 <h3>Phase 2.</h3>
 <ul>
  	<li>Extracting the <a href="https://lnrsoft.com/files/7010_A11.EXE.zip">7010_A11.EXE</a> (7944 KB) file from the original <a href="https://downloads.dell.com/bios/R301250.exe">R301250.exe</a> (2969 KB) file using <a href="https://www.legroom.net/software/uniextract">Universal Extractor</a> (source: https://www.legroom.net/software/uniextract ). In numerous cases <a href="https://www.7-zip.org/">7-Zip</a> able extract exe files as well.
-  
+&nbsp;
+ 
   <center><a href="https://lnrsoft.com/wp-content/uploads/2018/06/universal-extractor.png" rel="lightbox[1318]"><img class="aligncenter wp-image-4433 size-medium" src="https://lnrsoft.com/wp-content/uploads/2018/06/universal-extractor-300x164.png" sizes="(max-width: 300px) 100vw, 300px" srcset="https://lnrsoft.com/wp-content/uploads/2018/06/universal-extractor-300x164.png 300w, https://lnrsoft.com/wp-content/uploads/2018/06/universal-extractor.png 307w" alt="" width="300" height="164" /></a><center>extracting</center>
-<a href="https://lnrsoft.com/wp-content/uploads/2018/06/extracted_N7010_1.png" rel="lightbox[1318]">
+ 
+ &nbsp;
+
+<center><a href="https://lnrsoft.com/wp-content/uploads/2018/06/extracted_N7010_1.png" rel="lightbox[1318]">
 <img class="aligncenter wp-image-4432 size-medium" src="https://lnrsoft.com/wp-content/uploads/2018/06/extracted_N7010_1-300x44.png" sizes="(max-width: 300px) 100vw, 300px" srcset="https://lnrsoft.com/wp-content/uploads/2018/06/extracted_N7010_1-300x44.png 300w, https://lnrsoft.com/wp-content/uploads/2018/06/extracted_N7010_1.png 587w" alt="" width="300" height="44" /></a><center>the result</center></li>
 </ul></center>
 <h3>Phase 3.</h3>
@@ -82,7 +85,9 @@ You’ll need <a href="https://www.7-zip.org/">7-Zip</a> or<a href="https://ww
  	<li>Extracting *.rom , *.bin files using <a href="https://forums.mydigitallife.net/threads/tool-to-insert-replace-slic-in-phoenix-insyde-dell-efi-bioses.13194/">PhoenixTool 2.73</a> (Phoenix/Dell/EFI SLIC Mod v2.73 , source: <a href="https://forums.mydigitallife.net/threads/tool-to-insert-replace-slic-in-phoenix-insyde-dell-efi-bioses.13194/">https://forums.mydigitallife.net</a> )</li>
  	<li>In the <a href="https://forums.mydigitallife.net/threads/tool-to-insert-replace-slic-in-phoenix-insyde-dell-efi-bioses.13194/">PhoenixTool</a> select and add your<a href="https://lnrsoft.com/files/7010_A11.EXE.zip"> 7010_A11.EXE</a> file as the Original BIOS, then set Manufacturer to Dell and add the DELL.BIN SLIC file (this can be found in PhoenixTool273/SLIC21 folder)</li>
  	<li><strong>Note!</strong> In order to extract rom files, you’ll need to tick/select from Advanced options under control options “Extract modules when verifying” then press done and verify. It will then create a DUMP folder next to your <a href="https://lnrsoft.com/files/7010_A11.EXE.zip">7010_A11.EXE</a> file. <a href="https://www.microsoft.com/en-us/download/details.aspx?id=21"> Microsoft .NET Framework 3.5</a> required for <a href="https://forums.mydigitallife.net/threads/tool-to-insert-replace-slic-in-phoenix-insyde-dell-efi-bioses.13194/">PhoenixTool 2.73</a>.
-  <center><a href="https://lnrsoft.com/wp-content/uploads/2018/06/PhoenixTool.png" rel="lightbox[1318]"><img class="aligncenter wp-image-4430 size-medium" src="https://lnrsoft.com/wp-content/uploads/2018/06/PhoenixTool-300x129.png" sizes="(max-width: 300px) 100vw, 300px" srcset="https://lnrsoft.com/wp-content/uploads/2018/06/PhoenixTool-300x129.png 300w, https://lnrsoft.com/wp-content/uploads/2018/06/PhoenixTool-768x330.png 768w, https://lnrsoft.com/wp-content/uploads/2018/06/PhoenixTool-1024x440.png 1024w, https://lnrsoft.com/wp-content/uploads/2018/06/PhoenixTool.png 1347w" alt="" width="300" height="129" /></a><center>PhoenixTool 2.73</center><a href="https://lnrsoft.com/wp-content/uploads/2018/06/PhoenixTool_results.png" rel="lightbox[1318]"><img class="aligncenter wp-image-4429 size-medium" src="https://lnrsoft.com/wp-content/uploads/2018/06/PhoenixTool_results-300x149.png" sizes="(max-width: 300px) 100vw, 300px" srcset="https://lnrsoft.com/wp-content/uploads/2018/06/PhoenixTool_results-300x149.png 300w, https://lnrsoft.com/wp-content/uploads/2018/06/PhoenixTool_results-768x381.png 768w, https://lnrsoft.com/wp-content/uploads/2018/06/PhoenixTool_results-1024x508.png 1024w" alt="" width="300" height="149" /></a><center>result</center></li></center>
+  <center><a href="https://lnrsoft.com/wp-content/uploads/2018/06/PhoenixTool.png" rel="lightbox[1318]"><img class="aligncenter wp-image-4430 size-medium" src="https://lnrsoft.com/wp-content/uploads/2018/06/PhoenixTool-300x129.png" sizes="(max-width: 300px) 100vw, 300px" srcset="https://lnrsoft.com/wp-content/uploads/2018/06/PhoenixTool-300x129.png 300w, https://lnrsoft.com/wp-content/uploads/2018/06/PhoenixTool-768x330.png 768w, https://lnrsoft.com/wp-content/uploads/2018/06/PhoenixTool-1024x440.png 1024w, https://lnrsoft.com/wp-content/uploads/2018/06/PhoenixTool.png 1347w" alt="" width="300" height="129" /></a></center>
+    &nbsp;
+   <center><a href="https://lnrsoft.com/wp-content/uploads/2018/06/PhoenixTool_results.png" rel="lightbox[1318]"><img class="aligncenter wp-image-4429 size-medium" src="https://lnrsoft.com/wp-content/uploads/2018/06/PhoenixTool_results-300x149.png" sizes="(max-width: 300px) 100vw, 300px" srcset="https://lnrsoft.com/wp-content/uploads/2018/06/PhoenixTool_results-300x149.png 300w, https://lnrsoft.com/wp-content/uploads/2018/06/PhoenixTool_results-768x381.png 768w, https://lnrsoft.com/wp-content/uploads/2018/06/PhoenixTool_results-1024x508.png 1024w" alt="" width="300" height="149" /></a><center></center></li></center>
 </ul>
 </li>
 </ul>
@@ -106,7 +111,12 @@ Useful resources:
 </div>
 </div></li>
 </ol>
-The reason behind writing this BIOS recovery article is provide some helpful info/advice/starting point to everyone facing with the same issue. If you feel that this procedure helped you to save time / money as you were able to successfully recover your corrupted BIOS, you can make a small donation to my BTC address 15JmQsaxyaxsEZf5WJVDxibLkLJFWtz83y . Your support is greatly appreciated.
+The reason behind writing this BIOS recovery article is provide some helpful info/advice/starting point to everyone facing with the same issue. I hope this procedure helped you to save time / money as you were able to successfully recover your corrupted BIOS.
+    &nbsp;
+
+If you would like to support please can make a small donation to my BTC address 15JmQsaxyaxsEZf5WJVDxibLkLJFWtz83y 
+Your support is greatly appreciated.
+    &nbsp;
 
 <a href="bitcoin:15JmQsaxyaxsEZf5WJVDxibLkLJFWtz83y"><img class="aligncenter wp-image-4436 size-full" src="https://lnrsoft.com/wp-content/uploads/2017/06/15JmQsaxyaxsEZf5WJVDxibLkLJFWtz83y-1.png" sizes="(max-width: 175px) 100vw, 175px" srcset="https://lnrsoft.com/wp-content/uploads/2017/06/15JmQsaxyaxsEZf5WJVDxibLkLJFWtz83y-1.png 175w, https://lnrsoft.com/wp-content/uploads/2017/06/15JmQsaxyaxsEZf5WJVDxibLkLJFWtz83y-1-150x150.png 150w" alt="" width="175" height="175" /></a>
 This work (How to re-flash the corrupted BIOS of a Dell Laptop using only a USB drive, by Roland Ihasz) is free of known copyright restrictions.
